@@ -23,13 +23,13 @@ public class Policia extends Persona {
         rango = mat;
     }
 
-    public String getRango() {
+    public String obtenerRango() {
         return rango;
     }
 
     @Override
     public String toString() {
 
-        return String.format("%s - %s", super.toString(), getRango());
+        return String.format("%s - %s", super.toString(), obtenerRango());
     }
 }

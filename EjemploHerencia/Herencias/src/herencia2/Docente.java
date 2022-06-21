@@ -14,15 +14,15 @@ public class Docente extends Persona{
     
     public Docente(String n, String a, int e, double mat){
         super(n, a, e);
-        setSueldo(mat);
+        establecerSueldo(mat);
     }
     
         
-    public void setSueldo(double mat){
+    public void establecerSueldo(double mat){
         sueldo = mat;
     }
     
-    public double getSueldo(){
+    public double obtenerSueldo(){
         return sueldo;
     }
     
@@ -30,6 +30,7 @@ public class Docente extends Persona{
     @Override
     public String toString(){
     
-        return String.format("%s - %f", super.toString(), getSueldo());
+        return String.format("%s"
+                + "Sueldo: %.2f\n", super.toString(), obtenerSueldo());
     }
 }
